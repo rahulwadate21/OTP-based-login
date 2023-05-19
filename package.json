@@ -1,0 +1,19 @@
+{
+  "name": "otp-based-login",
+  "version": "1.0.0",
+  "description": "otp based login",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Wadate",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.2",
+    "nodemailer": "^6.9.2",
+    "passport-jwt": "^4.0.1"
+  }
+}
