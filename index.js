@@ -165,7 +165,7 @@ app.post("/login", async (req, res) => {
     // Delete the OTP and reset login attempts for the user
     await User.updateOne(
       { email },
-      { otp: otp, otpExpiration: null, loginAttempts: 0 }
+      { otp:"", otpExpiration: null, loginAttempts: 0 }
     );
 
     // Generate and return a new JWT token for the authenticated user
