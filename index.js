@@ -181,7 +181,7 @@ app.post("/login", async (req, res) => {
 
 // Generate JWT token
 const generateToken = (email) => {
-  const secretKey = "rahul"; // Replace with your secret key
+  const secretKey = "rahul"; 
   const token = jwt.sign({ email }, secretKey, { expiresIn: "1h" });
   console.log("JWT token is " + token);
   return token;
